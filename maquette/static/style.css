@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contenaire {
+    border-radius: 10px;
+    /* Coins arrondis */
+    width: 100%;
+    height: 500px;
+    background-color: rgb(224, 215, 215);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(71, 132, 179);
+    width: 100%;
+    height: 7%;
+    justify-content: center;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Première section concernant la Page d'accueil */
+.carton {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(224, 215, 215);
+    justify-content: center;
+    align-items: center;
+}
+
+.encadre {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 60%;
+    background-color: rgb(122, 179, 222);
+    border-radius: 25px;
+    /* Coins arrondis */
+    justify-content: center;
+    align-items: center;
+}
+
+.connexion {
+    background-color: rgb(121, 119, 119);
+}
+
+.encadre a{
+    text-decoration: none;
+}
+/* Partie concernant la PAGE 2 */
+.zoro {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(167, 201, 227);
+    width: 100%;
+    height: 7%;
+    color: #fff;
+    border: 2px solid rgb(64, 62, 62);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.cart2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(224, 215, 215);
+    /* border: 4px solid black; */
+    border-radius: 10px;
+    /* Coins arrondis */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    background-color: rgb(163, 179, 190);
+    width: 20%;
+    height: 100%;
+    display: flex;
+}
+
+.right {
+    width: 80%;
+    height: 100%;
+    /* background-color: rgb(224, 215, 215); */
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.espace {
+    height: 80%;
+    width: 90%;
+    /* border: 2px solid yellow; */
+    position: relative;
+}
+
+.liste {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    height: 35%;
+    margin-top: 30px;
+}
+
+.liste div {
+    background-color: #fff;
+    border: 1px solid black;    
+    height: 17%;
+    /* Coins arrondis */
+}
+.liste a {
+    text-decoration: none;
+}
+
+.contenaire2 {
+    /* border: 4px solid black; */
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    /* Coins arrondis */
+    width: 100%;
+    height: 500px;
+    background-color: rgb(224, 215, 215);
+    align-items: center;
+}
+
+.parcours {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+
+/* SECTION DE LA PAGE 4 */
+#right{
+    position: relative;
+}
+.right .ajout1 a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.right .ajout1{
+    height: 45px;
+    width: 100px;
+    border: 2px solid rgb(144, 144, 168);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(140, 193, 140);
+    border-radius: 8px;
+    position: absolute;
+    right: 80px;
+    top: 80px;
+}
+
+
+
+table{
+    border-collapse: collapse;
+    width: 700px;
+    text-align: center;
+}
+
+caption{
+    text-align-last: left;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+thead tr {
+    background-color: rgb(34, 34, 182);
+}
+
+thead tr th {
+    color: #fff;
+}
+
+tbody tr.col {
+    background-color: #d2deef;
+}
+
+tbody tr.cod, tr.cod2 {
+    background-color:  #EAEFF7;
+}
+
+/* ----------------Page5---------------- */
+.para {
+    width: 100%;
+    height: 10%;
+ 
+}
+
+.form {
+    width: 70%;
+    height: 50%;
+}
+
+.form div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form input {
+    width: 50%;
+}
+
+.bouton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 60px;
+    position: absolute;
+    left: 85px;
+}
+
+.bouton :first-child {
+    background-color: rgb(150, 102, 102);
+    color: white;
+    height: 40px;
+    width: 40%;
+    margin-right: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+.bouton :last-child {
+    background-color: rgb(121, 129, 121);
+    color: white;
+    height: 40px;
+    width: 40%;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ----------------SECTION DE LA PAGE 6 -----------------------*/
+tbody .cod2  td {
+    color: rgb(77, 86, 77);
+}
+
+.enregis {
+    width: 50%;
+    background-color: rgb(202, 212, 186);
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+/* .modifier
+{
+    background-color: rgb(229, 162, 38);
+    color: white;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+} */
+
+/* ------------partie 9---------------- */
+
+.info
+{
+    background-color: rgb(229, 162, 38);
+    color: black;
+    height: 35%;
+    width: 60%;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.tab table tbody tr td:last-child div {
+    /* border: 2px solid red; */
+}
+
+.tab table tbody tr td:last-child div button {
+    text-decoration: none;
+    /* border: 2px solid yellow; */
+    width: 85px;
+    background-color: aquamarine;
+    border-radius: 7px;
+}
+
+.tab table tbody tr td:last-child div button a{
+    text-decoration: none;
+
+}
