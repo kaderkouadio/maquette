@@ -6,30 +6,30 @@
       <h1>Ajouter un nouveau magasin</h1>
     </div>
     <div class="formulaire">
-      <form action="" method="get">
+      <form action="{{url_for('page4')}}" method="POST">
         <div>
           <label for="Nom">Nom:</label>
-          <input type="text" name="Nom" id="Nom" />
+          <input type="text" name="Nom" id="Nom" name="Nom" />
         </div>
 
         <div>
           <label for="Adresse">Adresse:</label>
-          <input type="url" name="Adresse" id="Adresse" />
+          <input type="text" name="Adresse" id="Adresse" name="Adresse" />
         </div>
         <div>
           <label for="Téléphone">Téléphone:</label>
-          <input type="tel" name="Téléphone" id="Téléphone" />
+          <input type="tel" name="Téléphone" id="Téléphone" name="Telephone" />
         </div>
         <div>
           <label for="E-mail">E-mail:</label>
-          <input type="email" name="E-mail" id="E-mail" />
+          <input type="email" name="E-mail" id="E-mail" name="email" />
         </div>
         <div class="bouton6">
           <div class="bouton6_1">
             <a href="/page3/">Retour</a>
           </div>
           <div class="bouton6_2">
-            <a href="/page5/">Valider</a>
+            <button type="submit">Valider</button>
           </div>
         </div>
       </form>

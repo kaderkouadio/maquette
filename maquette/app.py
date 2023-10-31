@@ -1,5 +1,13 @@
+from flask import Flask, render_template, url_for, request
+import pyodbc as odbc
 
-from flask import Flask, render_template, url_for
+DSN = 'Driver={SQL Server};Server=DESKTOP-DU03FQL\\SQLEXPRESS;Database=Gestion_des_Magasins;Trusted_Connection=yes;'
+conn = odbc.connect(DSN)
+cursor = conn.cursor()
+# uid = <username>;
+# pwd = <password>;
+print(conn)
+
 
 app = Flask(__name__)
 
@@ -19,8 +27,20 @@ def page3():
     return render_template("page3.html")
 
 
-@app.route("/page4/")
+@app.route("/page4/", methods=["get", "post"])
 def page4():
+    if request.method=="POST":
+        nom = request.form.get("Nom")
+        adresse = request.form.get("Adresse")
+        telephone = request.form.get("Telephone")
+        email = request.form.get("email")
+        cursor.execute(
+            """
+    INSERT INTO Magasin (NomMagasin, Adresse, Telephone, Email)
+    VALUES (?, ?, ?, ?)
+    """,
+            (nom, adresse, telephone, email)
+        )
     return render_template("page4.html")
 
 
