@@ -1,8 +1,18 @@
-{%extends "base.html" %}
-
-{%block centre%}
-
-<div class="right"></div>
-{% endblock %}
-           
- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
+    <title>Acceuil</title>
+  </head>
+  <body>
+    {% include './partiel/header.html' %}
+    <main>
+      <section class="section2">
+        {% include './partiel/menu.html' %} {% block main_content %} {% endblock
+        main_content%}
+      </section>
+    </main>
+  </body>
+</html>
