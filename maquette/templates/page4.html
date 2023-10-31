@@ -1,164 +1,39 @@
-{%extends "base.html" %}
-{%block centre%}
+{% extends "base.html" %} {% block main_content %}
 
+<div class="section2_2">
+  <div class="section2_2_1">
+    <div class="Ajouter">
+      <h1>Ajouter un nouveau magasin</h1>
+    </div>
+    <div class="formulaire">
+      <form action="" method="get">
+        <div>
+          <label for="Nom">Nom:</label>
+          <input type="text" name="Nom" id="Nom" />
+        </div>
 
-            <div id="right" class="right">
-                <div class="ajout1"><a href="page5.html">Ajouter</a>
-                </div>
-
-                <div class="tab">
-                    <table border="1">
-                        <caption>Liste des Magasions</caption>
-                        <thead>
-                            <tr>    
-                                <th>Id</th>
-                                <th>Nom</th>
-                                <th>Adresse</th>
-                                <th>Telephone</th>
-                                <th>Mail</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="col">
-                                <td>1</td>
-                                <td>Magasin1</td>
-                                <td>Adresse1</td>
-                                <td>Telephone1</td>
-                                <td>E-Mail1</td>
-                                <td>
-                                    <div>
-                                        <button>
-                                            <a href="page7.html">Modifier</a>
-                                        </button>
-                                        <button>
-                                            <a href="page9.html">supprimer</a>
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="cod">
-                                <td>2</td>
-                                <td>Magasin2</td>
-                                <td>Adresse2</td>
-                                <td>Telephone2</td>
-                                <td>E-Mail2</td>
-                                <td>
-                                    <div>
-                                        <button>
-                                            <a href="page7.html">Modifier</a>
-                                        </button>
-                                        <button>
-                                            <a href="page9.html">supprimer</a>
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="col">
-                                <td>3</td>
-                                <td>Magasin3</td>
-                                <td>Adresse3</td>
-                                <td>Telephone3</td>
-                                <td>E-Mail3</td>
-                                <td>
-                                    <div>
-                                        <button>
-                                            <a href="page7.html">Modifier</a>
-                                        </button>
-                                        <button>
-                                            <a href="page9.html">supprimer</a>
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="cod">
-                                <td>4</td>
-                                <td>Magasin4</td>
-                                <td>Adresse4</td>
-                                <td>Telephone4</td>
-                                <td>E-Mail4</td>
-                                <td>
-                                    <div>
-                                        <button>
-                                            <a href="page7.html">Modifier</a>
-                                        </button>
-                                        <button>
-                                            <a href="page9.html">supprimer</a>
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="col">
-                                <td>5</td>
-                                <td>Magasin5</td>
-                                <td>Adresse5</td>
-                                <td>Telephone5</td>
-                                <td>E-Mail5</td>
-                                <td>
-                                    <div>
-                                        <button>
-                                            <a href="page7.html">Modifier</a>
-                                        </button>
-                                        <button>
-                                            <a href="page9.html">supprimer</a>
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="cod">
-                                <td>6</td>
-                                <td>Magasin6</td>
-                                <td>Adresse6</td>
-                                <td>Telephone6</td>
-                                <td>E-Mail6</td>
-                                <td>
-                                    <div>
-                                        <button>
-                                            <a href="page7.html">Modifier</a>
-                                        </button>
-                                        <button>
-                                            <a href="page9.html">supprimer</a>
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="col">
-                                <td>7</td>
-                                <td>Magasin7</td>
-                                <td>Adresse7</td>
-                                <td>Telephone7</td>
-                                <td>E-Mail7</td>
-                                <td>
-                                    <div>
-                                        <button>
-                                            <a href="page7.html">Modifier</a>
-                                        </button>
-                                        <button>
-                                            <a href="page9.html">supprimer</a>
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="cod2">
-                                <td>Nouveau</td>
-                                <td>Nouveau</td>
-                                <td>Nouveau</td>
-                                <td>Nouveau</td>
-                                <td>Nouveau</td>
-                                <td>
-                                    <div>
-                                        <button>
-                                            <a href="page7.html">Modifier</a>
-                                        </button>
-                                        <button>
-                                            <a href="page9.html">supprimer</a>
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-
-                    </table>
-                </div>
-            </div>
- {% endblock %}
+        <div>
+          <label for="Adresse">Adresse:</label>
+          <input type="url" name="Adresse" id="Adresse" />
+        </div>
+        <div>
+          <label for="Téléphone">Téléphone:</label>
+          <input type="tel" name="Téléphone" id="Téléphone" />
+        </div>
+        <div>
+          <label for="E-mail">E-mail:</label>
+          <input type="email" name="E-mail" id="E-mail" />
+        </div>
+        <div class="bouton6">
+          <div class="bouton6_1">
+            <a href="/page3/">Retour</a>
+          </div>
+          <div class="bouton6_2">
+            <a href="/page5/">Valider</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock main_content%}

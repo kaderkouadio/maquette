@@ -1,79 +1,151 @@
-<html lang="en">
+{% extends "base.html" %} {% block main_content %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page7</title>
-    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-</head>
-
-<body>
-    <section class="contenaire">
-        <section class="zoro">
-            <p>ZORO</p>
-        </section>
-        <section class="cart2">
-            <div class="left">
-                <div class="liste">
-                    <div>
-                        <a href="page4.html">Accueil</a>
-                    </div>
-                    <div>
-                        <a href="page4.html">Magasin</a>
-                    </div>
-                    <div>
-                        <p>Produit</p>
-                    </div>
-                    <div>
-                        <p>Vente</p>
-                    </div>
-                    <div>
-                        <p>Stock</p>
-                    </div>
-                    <div><a href="page1.html">Déconnexion</a></div>
-                </div>
+<div class="section2_2">
+  <div class="section2_2_1">
+    <div class="boutonS2_2">
+      <div class="clic">
+        <a href="/page4/">Ajouter</a>
+      </div>
+    </div>
+    <div class="listeS">
+      <h1>Le magasin numéro 5 a été modifié avec succès</h1>
+    </div>
+    <div class="tableau">
+      <table>
+        <th>Id</th>
+        <th>Nom</th>
+        <th>Adresse</th>
+        <th>Téléphone</th>
+        <th>Mail</th>
+        <th>Action</th>
+        <tr class="ligne1">
+          <td>1</td>
+          <td>Magasin 1</td>
+          <td>Adresse 1</td>
+          <td>Téléphone 1</td>
+          <td>E-mail 1</td>
+          <td class="action">
+            <div class="modifier">
+              <a href="{{url_for('page6')}}">Modifier</a>
             </div>
-            <div class="right">
-                <div class="espace">
-                    <div class="para">
-                        <p>Modifier un Magasin</p>
-                    </div>
-                    <div class="form">
-                        <form>
-                            <div>
-                                <label for="nom"> Entrez votre nom:</label>
-                                <input type="text" id="nom" placeholder="Magasin 5"  name="nom">
-                            </div> <br>
-                            <div>
-                                <label for="adresse"> Entrez votre Adresse:</label>
-                                <input type="text" id="adresse"placeholder="Adresse 5" name="adresse">
-                            </div> <br>
-                            <div>
-                                <label for="tel"> Entrez votre Telephone:</label>
-                                <input type="number" id="tel"placeholder="Telephone M" name="tel">
-                            </div> <br>
-                            <div>
-                                <label for="mail"> Entrez votre Email</label>
-                                <input type="email" id="mail"placeholder="E-mail 5" name="mail">
-                            </div> 
-                        </form>
-                    </div>
-                    <div class="bouton">
-                        <!-- <input type="submit" value="Retour">
-                        <input type="submit" value="Valider"> -->
-                        <a href="page4.html"> Retour</a>
-                        <a href="page8.html">Valider</a>
-                    </div>
-                </div>
+            <div class="supprimer">
+              <a href="/page8/">Supprimer</a>
             </div>
-        </section>
+          </td>
+        </tr>
+        <tr class="ligne2">
+          <td>2</td>
+          <td>Magasin 2</td>
+          <td>Adresse 2</td>
+          <td>Téléphone 2</td>
+          <td>E-mail 2</td>
+          <td class="action">
+            <div class="modifier">
+              <a href="{{url_for('page6')}}">Modifier</a>
+            </div>
+            <div class="supprimer">
+              <a href="/page8/">Supprimer</a>
+            </div>
+          </td>
+        </tr>
 
-</body>
+        <tr class="ligne3">
+          <td>3</td>
+          <td>Magasin 3</td>
+          <td>Adresse 3</td>
+          <td>Téléphone 3</td>
+          <td>E-mail 3</td>
+          <td class="action">
+            <div class="modifier">
+              <a href="{{url_for('page6')}}">Modifier</a>
+            </div>
+            <div class="supprimer">
+              <a href="/page8/">Supprimer</a>
+            </div>
+          </td>
+        </tr>
 
-</html>
+        <tr class="ligne4">
+          <td>4</td>
+          <td>Magasin 4</td>
+          <td>Adresse 4</td>
+          <td>Téléphone 4</td>
+          <td>E-mail 4</td>
+          <td class="action">
+            <div class="modifier">
+              <a href="{{url_for('page6')}}">Modifier</a>
+            </div>
+            <div class="supprimer">
+              <a href="/page8/">Supprimer</a>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="ligne5_2">
+          <td>5</td>
+          <td>Magasin 5</td>
+          <td>Adresse 5</td>
+          <td>Téléphone 5</td>
+          <td>E-mail 5</td>
+          <td class="action">
+            <div class="modifier">
+              <a href="{{url_for('page6')}}">Modifier</a>
+            </div>
+            <div class="supprimer">
+              <a href="/page8/">Supprimer</a>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="ligne6">
+          <td>6</td>
+          <td>Magasin 6</td>
+          <td>Adresse 6</td>
+          <td>Téléphone 6</td>
+          <td>E-mail 6</td>
+          <td class="action">
+            <div class="modifier">
+              <a href="{{url_for('page6')}}">Modifier</a>
+            </div>
+            <div class="supprimer">
+              <a href="/page8/">Supprimer</a>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="ligne7">
+          <td>7</td>
+          <td>Magasin 7</td>
+          <td>Adresse 7</td>
+          <td>Téléphone 7</td>
+          <td>E-mail 7</td>
+          <td class="action">
+            <div class="modifier">
+              <a href="{{url_for('page6')}}">Modifier</a>
+            </div>
+            <div class="supprimer">
+              <a href="/page8/">Supprimer</a>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="ligne8_2">
+          <td>8</td>
+          <td>Magasin 8</td>
+          <td>Adresse 8</td>
+          <td>Téléphone 8</td>
+          <td>E-mail 8</td>
+          <td class="action">
+            <div class="modifier">
+              <a href="{{url_for('page6')}}">Modifier</a>
+            </div>
+            <div class="supprimer">
+              <a href="/page8/">Supprimer</a>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock main_content%}

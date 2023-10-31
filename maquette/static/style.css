@@ -1,323 +1,622 @@
-* {
-    margin: 0;
-    padding: 0;
+header {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(0, 153, 255);
+  border: solid rgb(0, 114, 137);
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  width: 45%;
+  height: 100%;
+  font-size: 85px;
+  text-align: center;
 }
 
-.contenaire {
-    border-radius: 10px;
-    /* Coins arrondis */
-    width: 100%;
-    height: 500px;
-    background-color: rgb(224, 215, 215);
+a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+  text-decoration: none;
 }
 
-.header {
-    display: flex;
-    align-items: center;
-    background-color: rgb(71, 132, 179);
-    width: 100%;
-    height: 7%;
-    justify-content: center;
-    color: #fff;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+/* INDEX.HTML */
+.section1 {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(177, 177, 177);
 }
 
-.menu ul {
-    list-style: none;
+.section1_1 {
+  height: 50%;
+  width: 40%;
+  border: 1px solid black;
+  background-color: rgb(0, 153, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
 }
 
-.menu ul li a {
-    text-decoration: none;
-    color: #fff;
+.formulaire1 {
+  height: 95%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+.formulaire1 h1 {
+  height: 8%;
+  width: 100%;
+  font-size: 2em;
+}
+.formulaire1 form {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.formulaire1 form input[type="text"],
+.formulaire1 form input[type="password"] {
+  width: 90%;
+  height: 20%;
+  border-radius: 10px;
+  text-align: center;
+}
+.formulaire1 form input[type="submit"] {
+  width: 60%;
+  height: 20%;
+  text-align: center;
+  border-radius: 10px;
+}
+.texte2 {
+  height: 8%;
+  width: 100%;
+  font-size: 18px;
+  text-decoration: underline;
+  color: #fff;
+}
+/* INDEX.HTML */
+
+/* INDEX4.HTML */
+
+.section2 {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: rgb(177, 177, 177);
 }
 
-/* Première section concernant la Page d'accueil */
-.carton {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(224, 215, 215);
-    justify-content: center;
-    align-items: center;
+.section2_1 {
+  width: 20%;
+  height: 100%;
+  background-color: rgb(0, 153, 255);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.section2_1_1 {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
 }
 
-.encadre {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: 60%;
-    background-color: rgb(122, 179, 222);
-    border-radius: 25px;
-    /* Coins arrondis */
-    justify-content: center;
-    align-items: center;
+.section2_2 {
+  width: 80%;
+  height: 100%;
+  background-color: rgb(219, 219, 219);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section2_2_1 {
+  width: 95%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.Ajouter {
+  width: 100%;
+  height: 12%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.formulaire {
+  width: 60%;
+  height: 70%;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.formulaire form {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.formulaire form div {
+  width: 100%;
+  margin-top: -5px;
+  display: flex;
+  flex-direction: column;
+}
+.formulaire form div input {
+  padding: 13px;
+  width: 50%;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 109, 119);
+  margin: 0 auto;
+}
+.formulaire form .bouton6 {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.connexion {
-    background-color: rgb(121, 119, 119);
+.formulaire form .bouton6 .bouton6_1 {
+  padding: 13px;
+  width: 120px;
+  background-color: rgb(175, 0, 0);
+  text-align: center;
+  font-size: 22px;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 109, 119);
+}
+.formulaire form .bouton6 .bouton6_2 {
+  padding: 13px;
+  width: 120px;
+  background-color: rgb(25, 126, 0);
+  text-align: center;
+  font-size: 22px;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 109, 119);
+}
+.buttons {
+  height: 50px;
+  width: 300px;
+  border-radius: 10px;
+  font-size: 32px;
+  text-align: center;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+button:hover {
+  background-color: rgb(202, 202, 202);
+  cursor: pointer;
 }
 
-.encadre a{
-    text-decoration: none;
+.boutonS2_2 {
+  width: 100%;
+  height: 12%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
-/* Partie concernant la PAGE 2 */
-.zoro {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    background-color: rgb(167, 201, 227);
-    width: 100%;
-    height: 7%;
-    color: #fff;
-    border: 2px solid rgb(64, 62, 62);
-    position: sticky;
-    top: 0;
-    z-index: 100;
+.clic {
+  width: 15%;
+  height: 70%;
+  font-size: 25px;
+  border: solid rgb(0, 49, 7);
+  background-color: rgb(1, 156, 37);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.cart2 {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(224, 215, 215);
-    /* border: 4px solid black; */
-    border-radius: 10px;
-    /* Coins arrondis */
-    justify-content: space-between;
-    align-items: center;
+.clic1 {
+  background-color: rgb(1, 156, 37);
 }
 
-.left {
-    background-color: rgb(163, 179, 190);
-    width: 20%;
-    height: 100%;
-    display: flex;
-}
-
-.right {
-    width: 80%;
-    height: 100%;
-    /* background-color: rgb(224, 215, 215); */
-    /* background-color: orange; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.espace {
-    height: 80%;
-    width: 90%;
-    /* border: 2px solid yellow; */
-    position: relative;
+.liste0 {
+  display: flex;
+  justify-content: start;
+  margin: 0;
+  font-size: 22px;
 }
 
 .liste {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    width: 100%;
-    height: 35%;
-    margin-top: 30px;
+  width: 100%;
+  height: 6%;
+  font-size: 20px;
+  display: flex;
+}
+.liste h1 {
+  width: 50%;
+  height: 100%;
+  background-color: beige;
+  border: #bbffa7 1px solid;
+  border-radius: 10px;
+  text-align: center;
+}
+.tableau {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
 }
 
-.liste div {
-    background-color: #fff;
-    border: 1px solid black;    
-    height: 17%;
-    /* Coins arrondis */
-}
-.liste a {
-    text-decoration: none;
+th {
+  border: 2px solid rgb(255, 255, 255);
+  font-size: 30px;
+  text-align: center;
+  background-color: rgb(0, 153, 255);
+  color: #fff;
 }
 
-.contenaire2 {
-    /* border: 4px solid black; */
-    display: flex;
-    justify-content: center;
-    border-radius: 10px;
-    /* Coins arrondis */
-    width: 100%;
-    height: 500px;
-    background-color: rgb(224, 215, 215);
-    align-items: center;
+td {
+  border: 1px solid beige;
+  font-size: 30px;
+  text-align: center;
+}
+.action {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.action .modifier {
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  border: 1px solid rgb(0, 49, 7);
+  border-radius: 7px;
+  background-color: rgb(255, 196, 0);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.action .supprimer {
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  border: 1px solid rgb(0, 49, 7);
+  border-radius: 7px;
+  background-color: rgb(195, 1, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.parcours {
-    display: flex;
-    width: 80%;
-    height: 80%;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
+table {
+  border-collapse: collapse;
 }
 
-
-/* SECTION DE LA PAGE 4 */
-#right{
-    position: relative;
+.ligne1 {
+  background-color: rgb(194, 231, 255);
 }
-.right .ajout1 a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+.ligne2 {
+  background-color: rgb(173, 207, 230);
 }
-.right .ajout1{
-    height: 45px;
-    width: 100px;
-    border: 2px solid rgb(144, 144, 168);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(140, 193, 140);
-    border-radius: 8px;
-    position: absolute;
-    right: 80px;
-    top: 80px;
+.ligne3 {
+  background-color: rgb(194, 231, 255);
+}
+.ligne4 {
+  background-color: rgb(173, 207, 230);
+}
+.ligne5 {
+  background-color: rgb(194, 231, 255);
+}
+.ligne6 {
+  background-color: rgb(173, 207, 230);
+}
+.ligne7 {
+  background-color: rgb(194, 231, 255);
 }
 
-
-
-table{
-    border-collapse: collapse;
-    width: 700px;
-    text-align: center;
+.ligne8 {
+  background-color: rgb(173, 207, 230);
+  color: rgb(1, 156, 37);
 }
 
-caption{
-    text-align-last: left;
-    font-weight: bold;
-    font-size: 1.3rem;
-    margin-bottom: 20px;
-}
-
-thead tr {
-    background-color: rgb(34, 34, 182);
-}
-
-thead tr th {
-    color: #fff;
-}
-
-tbody tr.col {
-    background-color: #d2deef;
-}
-
-tbody tr.cod, tr.cod2 {
-    background-color:  #EAEFF7;
-}
-
-/* ----------------Page5---------------- */
-.para {
-    width: 100%;
-    height: 10%;
- 
-}
-
-.form {
-    width: 70%;
-    height: 50%;
-}
-
-.form div {
-    display: flex;
-    justify-content: space-between;
-}
-
-.form input {
-    width: 50%;
-}
-
-.bouton {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 60px;
-    position: absolute;
-    left: 85px;
-}
-
-.bouton :first-child {
-    background-color: rgb(150, 102, 102);
-    color: white;
-    height: 40px;
-    width: 40%;
-    margin-right: 10px;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-}
-
-.bouton :last-child {
-    background-color: rgb(121, 129, 121);
-    color: white;
-    height: 40px;
-    width: 40%;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-}
-
-/* ----------------SECTION DE LA PAGE 6 -----------------------*/
-tbody .cod2  td {
-    color: rgb(77, 86, 77);
-}
-
-.enregis {
-    width: 50%;
-    background-color: rgb(202, 212, 186);
-    border: 1px solid;
-    border-radius: 3px;
-}
-
-/* .modifier
-{
-    background-color: rgb(229, 162, 38);
-    color: white;
-    height: 40px;
-    width: 40px;
-    margin-right: 10px;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
+/* form {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 } */
 
-/* ------------partie 9---------------- */
+/* INDEX4.HTML */
 
-.info
-{
-    background-color: rgb(229, 162, 38);
-    color: black;
-    height: 35%;
-    width: 60%;
-    border-radius: 10px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+/* MODIFIER.HTML */
 
+.Modifier {
+  width: 100%;
+  height: 12%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
 }
 
-.tab table tbody tr td:last-child div {
-    /* border: 2px solid red; */
+
+.formulaire2 {
+  width: 60%;
+  height: 70%;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.formulaire2 form {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.formulaire2 form div {
+  width: 100%;
+  margin-top: -5px;
+  display: flex;
+  flex-direction: column;
+}
+.formulaire2 form div input {
+  padding: 13px;
+  width: 50%;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 109, 119);
+  margin: 0 auto;
+}
+.formulaire2 form .bouton6 {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.tab table tbody tr td:last-child div button {
-    text-decoration: none;
-    /* border: 2px solid yellow; */
-    width: 85px;
-    background-color: aquamarine;
-    border-radius: 7px;
+.formulaire2 form .bouton6 .bouton6_1 {
+  padding: 13px;
+  width: 120px;
+  background-color: rgb(175, 0, 0);
+  text-align: center;
+  font-size: 22px;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 109, 119);
+}
+.formulaire2 form .bouton6 .bouton6_2 {
+  padding: 13px;
+  width: 120px;
+  background-color: rgb(25, 126, 0);
+  text-align: center;
+  font-size: 22px;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 109, 119);
 }
 
-.tab table tbody tr td:last-child div button a{
-    text-decoration: none;
-
+#Téléphone {
+  color: rgb(33, 142, 0);
 }
+
+.bouton6 {
+  width: 30%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.bouton6_1 {
+  padding: 13px;
+  width: 120px;
+  background-color: rgb(175, 0, 0);
+  text-align: center;
+  font-size: 22px;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 109, 119);
+}
+.bouton6_2 {
+  padding: 13px;
+  width: 120px;
+  background-color: rgb(25, 126, 0);
+  text-align: center;
+  font-size: 22px;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 109, 119);
+}
+
+/* MODIFIER.HTML */
+
+/* MODIFIER AVEC SUCCES.HTML */
+
+.boutonS2_2 {
+  width: 100%;
+  height: 12%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.clic {
+  width: 15%;
+  height: 70%;
+  font-size: 25px;
+  border: solid 1px rgb(0, 49, 7);
+  background-color: rgb(1, 156, 37);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.listeS {
+  width: 50%;
+  height: 8%;
+  font-size: 18px;
+  border-radius: 10px;
+  border: solid 1px rgb(0, 49, 7);
+  background-color: rgb(229, 255, 234);
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+}
+
+.tableau {
+  width: 100%;
+  height: 45%;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+th {
+  border: 2px solid rgb(255, 255, 255);
+  font-size: 30px;
+  text-align: center;
+  background-color: rgb(0, 153, 255);
+  color: #fff;
+}
+
+td {
+  border: 1px solid beige;
+  font-size: 30px;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.ligne1 {
+  background-color: rgb(194, 231, 255);
+}
+.ligne2 {
+  background-color: rgb(173, 207, 230);
+}
+.ligne3 {
+  background-color: rgb(194, 231, 255);
+}
+.ligne4 {
+  background-color: rgb(173, 207, 230);
+}
+.ligne5_2 {
+  background-color: rgb(194, 231, 255);
+  color: rgb(1, 156, 37);
+}
+.ligne6 {
+  background-color: rgb(173, 207, 230);
+}
+.ligne7 {
+  background-color: rgb(194, 231, 255);
+}
+.ligne8_2 {
+  background-color: rgb(173, 207, 230);
+}
+
+.action {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.action .modifier {
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  border: 1px solid rgb(0, 49, 7);
+  border-radius: 7px;
+  background-color: rgb(255, 196, 0);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.action .supprimer {
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  border: 1px solid rgb(0, 49, 7);
+  border-radius: 7px;
+  background-color: rgb(195, 1, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* MODIFIER AVEC SUCCES.HTML */
+
+/* SUPPRIMER.HTML */
+.section2_2_1_0 {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.Suppression {
+  width: 100%;
+  height: 12%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.Supprimer {
+  width: 70%;
+  height: 30%;
+  font-size: 25px;
+  margin-top: 30px;
+  text-align: center;
+  background-color: rgb(255, 191, 154);
+  border: solid 1px rgb(0, 153, 255);
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bouton6 {
+  width: 30%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.bouton6_1_1 {
+  padding: 13px;
+  width: 120px;
+  background-color: rgb(175, 0, 0);
+  text-align: center;
+  font-size: 22px;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 109, 119);
+}
+.bouton6_2_2 {
+  padding: 13px;
+  width: 120px;
+  background-color: rgb(25, 126, 0);
+  text-align: center;
+  font-size: 22px;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 109, 119);
+}
+/* SUPPRIMER.HTML */
