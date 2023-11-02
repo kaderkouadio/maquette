@@ -7,17 +7,17 @@
     </div>
     <div class="Supprimer">
       <p>
-        Vous êtes sur le point de supprimer le magasin n°2. Êtes-vous
+        Vous êtes sur le point de supprimer le magasin {{ data[1] }}. Êtes-vous
         <br />
         sûr de vouloir continuer ?
       </p>
     </div>
     <div class="bouton6">
       <div class="bouton6_1_1">
-        <a href="/page7/">Retour</a>
+        <a href="/pages5">Retour</a>
       </div>
       <div class="bouton6_2_2">
-        <a href="/page9/">Confirmer</a>
+        <a href="{{ url_for('delete', item_id=data[0]) }}">Confirmer</a>
       </div>
     </div>
   </div>

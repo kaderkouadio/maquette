@@ -131,9 +131,19 @@ def page7():
     return render_template("page7.html")
 
 
-@app.route("/page8/")
-def page8():
-    return render_template("page8.html")
+@app.route("/page8/<int:item_id>", methods=['GET', 'POST'])
+def page8(item_id):
+    item_id = int(item_id)
+
+    conn = odbc.connect(DSN)
+    cursor = conn.cursor()
+
+    cursor.execute('SELECT * FROM magasin WHERE IdMagasin = ?', (item_id,))
+    
+    data = cursor.fetchone()
+    conn.commit()
+    conn.close()
+    return render_template("page8.html", data=data)
 
 
 @app.route("/page9/")
@@ -142,4 +152,4 @@ def page9():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
