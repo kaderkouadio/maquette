@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block reload %}
+<script>
+  setTimeout(function () {
+    window.location.reload();
+  }, 8000);
+</script>
+{% endblock %} 
+
+{% block main_content %}
+<div class="section2_2">
+  <div class="section2_2_1">
+    <div class="boutonS2_2">
+      <div class="clic">
+        <button><a href="{{url_for('page4')}}">Ajouter</a></button>
+      </div>
+    </div>
+    <div class="liste">
+      <h1>Liste des Magasins</h1>
+    </div>
+    <div class="tableau">
+      <table>
+        <th>Id</th>
+        <th>Nom</th>
+        <th>Adresse</th>
+        <th>Téléphone</th>
+        <th>Mail</th>
+        <th>Action</th>
+
+        {% for row in data %}
+
+        <tr class="ligne1">
+          <td>{{ row[0] }}</td>
+          <td>{{ row[1] }}</td>
+          <td>{{ row[2] }}</td>
+          <td>{{ row[3] }}</td>
+          <td>{{ row[4] }}</td>
+          <td class="action">
+            <div class="modifier">
+              <a href="{{ url_for('edit', item_id=row[0]) }}">Modifier</a>
+            </div>
+            <div class="supprimer">
+              <a href="{{ url_for('delete', item_id=row[0]) }}">Supprimer</a>
+            </div>
+          </td>
+        </tr>
+
+        {% endfor %}
+        
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock %}
