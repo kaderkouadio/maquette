@@ -1,0 +1,43 @@
+
+{% extends "base.html" %} 
+{% block main_content %}
+
+<div class="section2_2">
+  <div class="section2_2_1">
+    <div class="boutonS2_2">
+      <div class="clic">
+        <a href="/Ajout/">Ajouter</a>
+      </div>
+    </div>
+    <div class="liste0">
+      <h1>Liste des Produits</h1>
+    </div>
+    <div class="tableau">
+      <table>
+        <th>Id</th>
+        <th>Nom</th>
+        <th>Categories</th>
+        <th>Prix</th>
+        <th>Action</th>
+        {% for row in data %}
+          <tr class="ligne1">
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+            <td>{{ row[3] }}</td>
+            <td class="action">
+              <div class="modifier">
+                <a href="/Modifier/{{row[0]}} ">Modifier</a>
+              </div>
+              <div class="supprimer">
+                <a href="/Suppression/{{row[0]}}">Supprimer</a>
+              </div>
+            </td>
+          </tr>
+        {% endfor %}
+      
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock main_content%}

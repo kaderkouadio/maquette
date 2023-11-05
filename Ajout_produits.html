@@ -1,0 +1,35 @@
+{% extends "base.html" %} {% block main_content %}
+
+<div class="section2_2">
+  <form method="POST" class="section2_2_1">
+    <div class="Ajouter">
+      <h1>Ajouter un nouveau Produit</h1>
+    </div>
+    <div class="formulaire">
+        <div>
+          <label >Nom:</label>
+          <input type="text" name="Nom"   required/>
+        </div>
+
+        <div>
+          <label >Categorie:</label>
+          <input type="text" name="Categorie"   required />
+        </div>
+        <div>
+          <label >PrixUnitaire:</label>
+          <input type="tel" name="PrixUnitaire"   required />
+        </div>
+        
+        <div class="bouton6">
+          <div class="bouton6_1">
+            <a href="/Liste/">Retour</a>
+          </div>
+          <div class="bouton6_2">
+            <button> valider </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+{% endblock main_content%}

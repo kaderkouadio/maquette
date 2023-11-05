@@ -1,0 +1,41 @@
+{% extends "base.html" %} {% block main_content %}
+
+<div class="section2_2">
+  <div class="section2_2_1">
+    <div class="Ajouter">
+      <h1>Modifier un Produit</h1>
+    </div>
+    <div class="formulaire2">
+      <form action="/Modifier/{{data[0]}}" method="post">
+       
+        <div>
+          <label for="Nom">Nom:</label>
+          <input type="text" name="Nom" id="Nom" value="{{data[1]}}" />
+        </div>
+
+        <div>
+          <label for="Categorie">Categorie:</label>
+          <input type="text" name="Categorie" id="Categorie" value="{{data[2]}}" />
+        </div>
+
+        <div>
+          <label for="PrixUnitaire">PrixUnitaire:</label>
+          <input type="text"  name="PrixUnitaire" id="PrixUnitaire" value="{{data[3]}}"/>
+        </div>
+        
+       
+        <div class="bouton6">
+          <div class="bouton6_1">
+            <a href="/Liste/">Retour</a>
+          </div>
+          <div class="bouton6_2">
+            <button type="submit" >Confirm</button>
+            
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock main_content%}
