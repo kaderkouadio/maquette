@@ -1,4 +1,5 @@
-{% extends "base.html" %} {% block main_content %}
+{% extends "base.html" %} 
+{% block main_content %}
 
 <div class="section2_2">
   <div class="section2_2_1">
@@ -6,27 +7,27 @@
       <h1>Ajouter un nouveau magasin</h1>
     </div>
     <div class="formulaire">
-      <form action="{{url_for('page4')}}" method="POST">
+      <form method="POST">
         <div>
           <label for="Nom">Nom:</label>
-          <input type="text" name="Nom" id="Nom" name="Nom" />
+          <input type="text" id="Nom" name="Nom" value="{{data[1]}}" required />
         </div>
 
         <div>
           <label for="Adresse">Adresse:</label>
-          <input type="text" name="Adresse" id="Adresse" name="Adresse" />
+          <input type="text" id="Adresse" name="Adresse" value="{{data[2]}}" required />
         </div>
         <div>
           <label for="Téléphone">Téléphone:</label>
-          <input type="tel" name="Téléphone" id="Téléphone" name="Telephone" />
+          <input type="tel" id="Téléphone" name="Telephone" value="{{data[3]}}" required />
         </div>
         <div>
           <label for="E-mail">E-mail:</label>
-          <input type="email" name="E-mail" id="E-mail" name="email" />
+          <input type="email" id="E-mail" name="email" value="{{data[4]}}" required />
         </div>
         <div class="bouton6">
           <div class="bouton6_1">
-            <a href="/page3/">Retour</a>
+            <a href="{{url_for('pages5')}}">Retour</a>
           </div>
           <div class="bouton6_2">
             <button type="submit">Valider</button>
@@ -36,4 +37,4 @@
     </div>
   </div>
 </div>
-{% endblock main_content%}
+{% endblock %}
